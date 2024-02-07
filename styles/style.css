@@ -63,7 +63,7 @@
     position: absolute;
     z-index: 0;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .cover-main {
@@ -84,6 +84,9 @@
 }
 
 .cover-title {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     color: #FFF;
     font-size: 100px;
     font-style: normal;
@@ -111,16 +114,15 @@
     display: block;
 }
 
-.cover-title__detail-adjust {
-    padding-top: 14px;
-}
 
 .text-center {
     text-align: center;
+    line-height: 100%;
 }
 
 .text-right {
     text-align: right;
+    line-height: 100%;
 }
 
 
@@ -282,6 +284,8 @@
     text-transform: uppercase;
 }
 
+
+
 .about-text__block {
     display: flex;
     flex-direction: column;
@@ -293,11 +297,13 @@
     line-height: 24px; /* 120% */
     max-width: 693px;
     margin-left: auto;
-}
-
-.paragraph-m {
     margin-bottom: 26px;
 }
+
+.about-text:last-child {
+    margin-bottom: 0;
+}
+
 
 .footer {
     display: flex;
