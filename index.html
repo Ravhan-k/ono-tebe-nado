@@ -24,7 +24,7 @@
           </li>
         </ul>
       </nav>
-      <a class="logo logo-black">
+      <a class="logo">
         <img class="logo-image" src="./images/logo-black.svg" alt="логотип">
       </a>
       <address class="contacts">
@@ -33,43 +33,53 @@
         <p class="contacts-item">наб. Принсенграхт 263-265,<br>Амстердам</p>
       </address>
     </header>
-    <main class="main ">
+    <main class="main">
       <section class="cover">
+        <div class="overlay"></div>
         <div class="cover-main">
         <h1 class="cover-title">
           <span class="cover-title__detail">о<span class="letter-spacing">но</span></span>
-          <span class="cover-title__detail cover-title__detail-second text-center">те<span class="letter-spacing">бе</span></span>
+          <span class="cover-title__detail cover-title__detail-adjust text-center">те<span class="letter-spacing">бе</span></span>
           <span class="cover-title__detail text-right"><span class="letter-spacing">н</span>aд<span class="letter-spacing__absent">о</span></span>
         </h1>
       </div>
         <div class="cover-info">
           <h2 class="cover-info__title">Аукцион вещей, в которые никто не верил</h2>
-          <button class="button">Сделать ставку</button>
+          <button type="button" class="button">Сделать ставку</button>
         </div>
       </section>
       <section class="lots">
         <h2 class="lots-title">Лоты</h2>
           <ul class="lots-list">
-            <li>
-              <article class="lots-object first-lot">
-                <h3 class="lots-object__title">Фильм режиссёра, который бросил киношколу</h3>
-                <p class="lots-object__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
-              </article>
+            <li class="lots-card">
+              <a class="lots-link" href="#">
+                <article class="lots-object lot-image__director">
+                  <div class="overlay"></div>
+                  <h3 class="lots-object__title">Фильм режиссёра, который бросил киношколу</h3>
+                  <p class="paragraph-text lots-object__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?</p>
+                </article>
+              </a>
             </li>
-            <li>
-              <article class="lots-object second-lot">
-                <h3 class="lots-object__title">Книга, где описан один скучный день из жизни <br> рекламного агента</h3>
-                <p class="lots-object__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
-              </article>
+            <li class="lots-card">
+              <a class="lots-link" href="#">
+                <article class="lots-object lot-image__writer">
+                  <div class="overlay"></div>
+                  <h3 class="lots-object__title">Книга, где описан один скучный день из жизни <br> рекламного агента</h3>
+                  <p class="paragraph-text lots-object__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?</p>
+                </article>
+              </a>
             </li>
-            <li>
-              <article class="lots-object third-lot">
-                <h3 class="lots-object__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
-                <p class="lots-object__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков… Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
-              </article>
+            <li class="lots-card">
+              <a class="lots-link" href="#">
+                <article class="lots-object lot-image__artist">
+                  <div class="overlay"></div>
+                  <h3 class="lots-object__title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
+                  <p class="paragraph-text lots-object__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков… Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
+                </article>
+              </a>
             </li>
           </ul>
-          <a class="lots-link" href="#">посмотреть больше</a>
+          <a class="lots-learn__more" href="#">посмотреть больше</a>
       </section>
       <section class="about">
         <div class="about-column">
@@ -78,12 +88,12 @@
         </div>
         <h2 class="about-title">Об аукционе</h2>
       </div>
-        <p class="about-text paragraph-m">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
-        <p class="about-text">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p>
+        <p class="paragraph-text about-text paragraph-m">Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?</p>
+        <p class="paragraph-text about-text">Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. </p>
       </section>
     </main>
     <footer class="footer">
-      <address class="footer-contacts">
+      <address class="contacts footer-contacts">
         <a class="contacts-item" href="tel:+99995555555">+9 999 555 5555</a>
         <a class="contacts-item" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p class="contacts-item">наб. Принсенграхт 263-265,<br>Амстердам</p>
